@@ -13,3 +13,6 @@
 # IDEs
 *.iml
 .idea
+
+# others
+README_ori.md
