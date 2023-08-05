@@ -1,7 +1,8 @@
 #[cfg(not(feature = "library"))]
 use cosmwasm_std::entry_point;
 use cosmwasm_std::{to_binary, Binary, Deps, DepsMut, Env, MessageInfo, Response, StdResult};
-use cw2::set_contract_version;
+use cw2::set_contract_version;   // set the contract version information.
+
 
 use crate::error::ContractError;
 use crate::msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg};
@@ -9,8 +10,9 @@ use crate::state::{State, STATE};
 
 // version info for migration info
 const CONTRACT_NAME: &str = "crates.io:cosmwasm-0-99";
-const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
+const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");  // 0.1.0 --> ref to cargo.toml
 
+//...kind of create the contract
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,
@@ -31,6 +33,7 @@ pub fn instantiate(
         .add_attribute("count", msg.count.to_string()))
 }
 
+//...write data
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
     deps: DepsMut,
@@ -63,6 +66,7 @@ pub fn try_reset(deps: DepsMut, info: MessageInfo, count: i32) -> Result<Respons
     Ok(Response::new().add_attribute("method", "reset"))
 }
 
+//...read data.
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
     match msg {

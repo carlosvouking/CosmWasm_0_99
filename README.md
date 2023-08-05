@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CosmWasm Starter Pack
 
 This is a template to build smart contracts in Rust to run inside a
@@ -104,3 +105,7 @@ Workspace contains:
 
 Follow [Gitpod Getting Started](https://www.gitpod.io/docs/getting-started) and launch your workspace.
 
+=======
+# CosmWasm_0_99
+Cosmos thus cosmwasm - cosmos webassembly to start exploring how to leverage #cosmwasm to build smart contract on the #Cosmos platform.
+>>>>>>> b3eedde7341d732cbae182c4a3ec27aca9bc4abf
