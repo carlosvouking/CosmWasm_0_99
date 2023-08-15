@@ -5,18 +5,18 @@ Build a smart contract and make it available on cosmos for people to place their
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Poll Contents</summary>
+  <summary>Project Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Building components</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Let us start here</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#prerequisites">What do we need at first</a></li>
         <li><a href="#installation">Installation requirements</a></li>
       </ul>
     </li>
